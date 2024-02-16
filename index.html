@@ -48,7 +48,8 @@
                     <!-- flex -->
                     <div>
                         <span class="text-[#111] text-2xl font-medium mr-4">Use Promo Code</span>
-                        <button class="bg-[#E527B2] rounded-lg w-40 h-14 border-0 text-white text-2xl font-bold">SELL200</button>
+                        <button
+                            class="bg-[#E527B2] rounded-lg w-40 h-14 border-0 text-white text-2xl font-bold">SELL200</button>
                     </div>
                 </div>
 
@@ -59,7 +60,7 @@
         </div>
     </header>
     <main class=" bg-[#F8F8F8;]">
-        <div class="mx-5 lg:container lg:mx-auto lg:pt-32 pt-10 lg:mb-24 mb-10 ">
+        <div class="mx-5 lg:container lg:mx-auto lg:pt-32 pt-10 lg:pb-24 pb-10 ">
             <div class="grid lg:grid-cols-4 gap-10">
                 <div class="lg:col-span-3">
                     <!-- Kitchenware -->
@@ -265,11 +266,13 @@
                 <div class=" mt-20">
                     <div class="p-6 bg-white rounded-lg mb-6">
                         <h3 class="text-[#111] text-2xl font-medium mb-6">Have coupon?</h3>
-                        <input id="input-field" class="text-xl p-4 border-l border-t border-b rounded-l-lg max-w-[200px]" type="text"
+                        <input id="input-field"
+                            class="text-xl p-4 border-l border-t border-b rounded-l-lg max-w-[200px]" type="text"
                             placeholder="Coupon code">
-                        <button id="apply" class="bg-[#E527B2] text-white text-xl font-semibold p-4 rounded-r-lg">Apply</button>
+                        <button id="apply"
+                            class="bg-[#E527B2] text-white text-xl font-semibold p-4 rounded-r-lg">Apply</button>
                     </div>
-                    <div  class="mt-10 p-6 bg-white rounded-lg">
+                    <div class="mt-10 p-6 bg-white rounded-lg">
                         <div id="title-container" class="text-[#111] text-2xl font-medium">
                             <h1 class="text-[#E527B2]">Your Cart</h1>
                             <hr class="mb-10">
@@ -282,7 +285,22 @@
                         <h3 class="text-[#111] text-2xl font-medium mb-10">Total : <span id="restTotal"
                                 class="text-[#11111180]"><span class="text-[#11111180]">TK</span></span></h3>
                         <hr>
-                        <button class="bg-[#E527B2] text-white p-4 text-xl font-semibold rounded-lg w-full mt-10">Make Purchase</button>
+                        <!-- The button to open modal -->
+                        <label for="my_modal_7"
+                            class="btn bg-[#E527B2] text-white p-2 text-xl font-semibold rounded-lg w-full mt-10">Make
+                            Purchase</label>
+                        <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+                        <div class="modal" role="dialog">
+                            <div class="modal-box  py-28 px-32">
+                                <div class="flex flex-col justify-center text-center items-center">
+                                    <img class="max-w-[160px] mb-10" src="images/congo.png" alt="">
+                                    <h3 class="text-[#111] text-5xl font-bold mb-4">Congratulations</h3>
+                                    <p class="text-[#11111180] text-xl mb-10">Your Purchase the product</p>
+                                    <button class="btn text-white text-xl font-semibold bg-[#E527B2] px-11">Go Home</button>
+                                </div>
+                            </div>
+                            <label class="modal-backdrop" for="my_modal_7">Close</label>
+                        </div>
                     </div>
 
                 </div>
